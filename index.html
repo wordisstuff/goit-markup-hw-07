@@ -29,7 +29,6 @@
                 </ul>
             </nav>
             <address class="address list flex mail-box">
-
                 <ul class="addreess-itms flex list mail">
                     <li class="address-item class-mail "><a class="address-link link"
                             href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -39,6 +38,77 @@
                     </li>
                 </ul>
             </address>
+
+            <!-- MOBiLE MEENU BUTTON -->
+            <div class="burger-btn-box">
+
+                <button class="burger-menu-btn flex js-open-menu">
+                    <svg class="burger-icon" width="32" height="22">
+                        <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- MOBIL MENU -->
+        <div class="mobile-menu-box js-menu-container">
+            <div class="mobile-menu container">
+                <ul class="mobile-nav-items list">
+                    <li class="mobile-nav-item"><a class="mobile-nav-link link" href="./index.html">Studio</a>
+                    </li>
+                    <li class="mobile-nav-item"><a class="mobile-nav-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="mobile-nav-item"><a class="mobile-nav-link link" href="">Contacts</a></li>
+                </ul>
+                <address class="mobile-address list mail-box">
+
+                    <ul class="mobile-addreess-items list mail">
+                        <li class="mobile-address-item "><a class="mobile-address-link burger-phone link"
+                                href="tel:+110001111111">+11
+                                (000)111-11-11</a>
+                        </li>
+                        <li class="mobile-address-item class-mail"><a class="mobile-address-link burger-mail link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="mobile-list-icon list flex">
+                    <li class="footer-icons">
+                        <a href="" class="footer-icon-link link">
+                            <svg class="footer-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-icons">
+                        <a href="" class="footer-icon-link link">
+                            <svg class="footer-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-icons">
+                        <a href="" class="footer-icon-link link">
+                            <svg class="footer-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-icons">
+                        <a href="" class="footer-icon-link link">
+                            <svg class="footer-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <button class="mobile-btn-close flex js-close-menu" type="button">
+                    <svg class="mobile-icon-close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-btn-close"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -107,19 +177,25 @@
             <div class="container">
                 <h2 class="items-header"> What are we doing</h2>
                 <ul class="works-item list flex">
-                    <li class="we-doing"><img src="./images/computer.jpg" alt="computer" width="360"></li>
-                    <li class="we-doing"><img src="./images/smartphones.jpg" alt="smartphones" width="360"></li>
-                    <li class="we-doing"><img src="./images/smartphone-in-hand.jpg" alt="smartphone in hend"
-                            width="360">
+                    <li class="we-doing"><img srcset="./images/computer@2x.jpg 2x" src="./images/computer.jpg"
+                            alt="computer" width="360"></li>
+                    <li class="we-doing"><img srcset="./images/smartphones@2x.jpg 2x" src="./images/smartphones.jpg"
+                            alt="smartphones" width="360"></li>
+                    <li class="we-doing"><img srcset="./images/smartphone-in-hand@2x.jpg 2x"
+                            src="./images/smartphone-in-hand.jpg" alt="smartphone in hend" width="360">
                     </li>
                 </ul>
             </div>
         </section>
+
+        <!--  ✅✅✅ 🧝‍♂️🧝‍♂️🧝‍♂️🧝‍♂️🧝‍♂️🧝‍♂️ CREW 🧝‍♂️🧝‍♂️🧝‍♂️🧝‍♂️🧝‍♂️🧝‍♂️ -->
+
         <section class="section crew ">
             <div class="crew-box container flex">
                 <h2 class="items-header">Our Team</h2>
                 <ul class="crew list flex">
-                    <li class="crew-item list"><img src="./images/mark.jpg" alt="Marks avatar" width="264">
+                    <li class="crew-item list">
+                        <img srcset="./images/mark@2x.jpg 2x" src="./images/mark.jpg" alt="Marks avatar" width="264">
                         <div class="crew-box-name">
                             <h3 class="crew-name">Mark Guerrero</h3>
                             <p class="crew-spec">Product Designer</p>
@@ -155,7 +231,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="crew-item list"><img src="./images/tom.jpg" alt="Toms avatar" width="264">
+                    <li class="crew-item list"><img srcset="./images/tom@2x.jpg 2x" src="./images/tom.jpg"
+                            alt="Toms avatar" width="264">
                         <div class="crew-box-name">
                             <h3 class="crew-name">Tom Ford</h3>
                             <p class="crew-spec">Frontend Developer</p>
@@ -191,7 +268,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="crew-item list"><img src="./images/camila.jpg" alt="Camilas avatar" width="264">
+                    <li class="crew-item list"><img srcset="./images/camila@2x.jpg 2x" src="./images/camila.jpg"
+                            alt="Camilas avatar" width="264">
                         <div class="crew-box-name">
                             <h3 class="crew-name">Camila Garcia</h3>
                             <p class="crew-spec">Marketing</p>
@@ -227,7 +305,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="crew-item list"><img src="./images/daniel.jpg" alt="Daniels avatar" width="264">
+                    <li class="crew-item list"><img srcset="./images/daniel@2x.jpg 2x" src="./images/daniel.jpg"
+                            alt="Daniels avatar" width="264">
                         <div class="crew-box-name">
                             <h3 class="crew-name">Daniel Wilson</h3>
                             <p class="crew-spec">UI Designer</p>
@@ -266,32 +345,33 @@
                 </ul>
             </div>
         </section>
+        <!-- /* ❌❌❌ 🧝‍♂️🧝‍♂️🧝‍♂️ CREW 🧝‍♂️🧝‍♂️🧝‍♂️ */ -->
         <section class="section">
             <div class="customers container">
-                <h2 class="items-header">Customers</h2>
+                <h2 class="cust-items-header">Customers</h2>
                 <ul class="customers-items list flex">
-                    <li class="customers-item"><a href="" class="link-customers link">
+                    <li class="customers-item flex"><a href="" class="link-customers link">
                             <svg class="costumer-svg" width="104" height="56">
                                 <use href="./images/icons.svg#icon-logo1"></use>
                             </svg>
                         </a></li>
-                    <li class="customers-item"><a href="" class="link-customers link"><svg class="costumer-svg"
+                    <li class="customers-item flex"><a href="" class="link-customers link"><svg class="costumer-svg"
                                 width="104" height="56">
                                 <use href="./images/icons.svg#icon-logo2"></use>
                             </svg></a></li>
-                    <li class="customers-item"><a href="" class="link-customers link"><svg class="costumer-svg"
+                    <li class="customers-item flex"><a href="" class="link-customers link"><svg class="costumer-svg"
                                 width="104" height="56">
                                 <use href="./images/icons.svg#icon-logo3"></use>
                             </svg></a></li>
-                    <li class="customers-item"><a href="" class="link-customers link"><svg class="costumer-svg"
+                    <li class="customers-item flex"><a href="" class="link-customers link"><svg class="costumer-svg"
                                 width="104" height="56">
                                 <use href="./images/icons.svg#icon-logo4"></use>
                             </svg></a></li>
-                    <li class="customers-item"><a href="" class="link-customers link"><svg class="costumer-svg"
+                    <li class="customers-item flex"><a href="" class="link-customers link"><svg class="costumer-svg"
                                 width="104" height="56">
                                 <use href="./images/icons.svg#icon-logo5"></use>
                             </svg></a></li>
-                    <li class="customers-item"><a href="" class="link-customers link"><svg class="costumer-svg"
+                    <li class="customers-item flex"><a href="" class="link-customers link"><svg class="costumer-svg"
                                 width="104" height="56">
                                 <use href="./images/icons.svg#icon-logo6"></use>
                             </svg></a></li>
@@ -420,6 +500,7 @@
             </form>
         </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
