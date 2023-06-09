@@ -182,8 +182,6 @@ body {
 
 .hero {
     flex-direction: column;
-    padding: 112px 0 112px;
-    /* background-size: 428px 432px, 428px 432px; */
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: cover;
@@ -1016,6 +1014,12 @@ screen and (max-width:767px) {
         width: 428px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .hero {
+        width: 428px;
+        padding: 112px 0 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/m-bg.jpg);
     }
 
     .nav-items {
