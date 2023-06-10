@@ -113,67 +113,6 @@ body {
     color: var(--background-seecon);
 }
 
-.nav-item:not(:last-child) {
-    margin-right: 40px;
-}
-
-.nav-link {
-
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--background-seecon);
-    padding-top: 24px;
-    padding-bottom: 24px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    ;
-}
-
-.nav-link.current {
-    color: var(--hover);
-}
-
-.current:after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--hover);
-}
-
-
-.nav-link:hover,
-.nav-link:focus {
-    color: var(--hover);
-}
-
-.address-item:not(:last-child) {
-    margin-right: 40px;
-}
-
-
-.address-link {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-link:hover,
-.address-link:focus {
-    color: var(--hover);
-}
-
 /* ❌❌❌ ⭕️⭕️ NAVIGATION ⭕️⭕️ */
 
 
@@ -196,9 +135,6 @@ body {
 .hero-header {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 36px;
-    line-height: 1.11;
-    max-width: 320px;
     letter-spacing: 0.02em;
     color: var(--background-white);
 }
@@ -214,7 +150,6 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     letter-spacing: 0.04em;
     cursor: pointer;
-    margin-top: 72px;
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
@@ -377,10 +312,10 @@ body {
 /* ❌❌❌ 🎹🎹🎹 CUSTOMERS 🎹🎹🎹 */
 
 /* ✅✅✅ 🔥🔥🔥🔥🔥🔥 FOOTER 🔥🔥🔥🔥🔥🔥 */
-
-.logo {
+/* 
+.logo-tooter {
     margin-right: 0;
-}
+} */
 
 .footer-box {
     display: flex;
@@ -390,6 +325,7 @@ body {
 }
 
 .footer-link {
+    margin-right: 0;
     display: flex;
     margin-bottom: 16px;
     justify-content: center;
@@ -998,28 +934,40 @@ body {
 /* 📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱 */
 /* 📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱 */
 /* ✅✅✅ 🟥🟦🟦🟦🟦 MOBILE 🟦🟦🟦🟦 */
-@media screen and (min-devise-pixel-ratio 2) and (max-width:767px),
-screen and (min-resolution: 192dpi) and (max-width:767px),
-screen and (min-resolution: 2dppx) and (max-width:767px) {
-    .hero {
-        width: 428px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/m-bg@2x.jpg);
-    }
-}
+
 
 @media screen and (min-width:280px),
 screen and (max-width:767px) {
     .container {
-        position: relative;
         width: 428px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .hero {
-        width: 428px;
-        padding: 112px 0 112px;
+        max-width: 428px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/m-bg.jpg);
+        padding: 112px 0 112px;
+    }
+
+    @media screen and (min-devise-pixel-ratio:2) and (max-width:767px),
+    screen and (min-resolution: 192dpi) and (max-width:767px),
+    screen and (min-resolution: 2dppx) and (max-width:767px) {
+        .hero {
+            width: 428px;
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/m-bg@2x.jpg);
+
+        }
+    }
+
+    .hero-header {
+        font-size: 36px;
+        line-height: 1.11;
+        max-width: 320px;
+    }
+
+    .order-service {
+        margin-top: 72px;
     }
 
     .nav-items {
@@ -1032,7 +980,7 @@ screen and (max-width:767px) {
 }
 
 .nav {
-    padding: 24px 0 22px;
+    padding: 24px 0 24px;
 }
 
 .burger-menu-btn {
@@ -1207,31 +1155,130 @@ screen and (max-width:767px) {
 /* 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥 */
 
 /* ✅✅✅ 🟪🟦🟦🟦🟦 TABLET 🟦🟦🟦🟦 */
-@media screen and (min-devise-pixel-ratio 2) and (min-width:768px),
-screen and (min-resolution: 192dpi) and (min-width:768px),
-screen and (min-resolution: 2dppx) and (min-width:768px) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/tablet-bg@2x.jpg);
-    }
-}
+
 
 @media screen and (min-width:768px) {
+
+    .container {
+        position: relative;
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ✅✅✅ ⭕️⭕️⭕️⭕️ NAVIGATION ⭕️⭕️⭕️⭕️ */
+
+    .header {
+        width: 768px;
+    }
+
+    .nav {
+        padding: 0;
+    }
+
+    .nav-items {
+        display: flex;
+    }
+
+    .nav-item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .nav-link {
+
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--background-seecon);
+        padding-top: 24px;
+        padding-bottom: 24px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        ;
+    }
+
+    .nav-link.current {
+        color: var(--hover);
+    }
+
+    .current:after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--hover);
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+        color: var(--hover);
+    }
+
+    .address {
+        display: block;
+        margin-left: auto;
+    }
+
+    .address-items {
+
+        display: block
+    }
+
+
+    .address-link {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--slate);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .address-link:hover,
+    .address-link:focus {
+        color: var(--hover);
+    }
+
+
+    .address-item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
     .burger-btn-box {
         display: none;
     }
 
+    /* ❌❌❌ ⭕️⭕️ NAVIGATION ⭕️⭕️ */
+
     .hero {
-        flex-direction: column;
-        padding: 112px 0 112px;
-        background-repeat: no-repeat, no-repeat;
-        background-position: center, center;
-        background-size: cover;
         max-width: 768px;
-        margin: 0 auto;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/tablet-bg.jpg);
     }
 
+    @media screen and (min-devise-pixel-ratio:2) and (min-width:768px),
+    screen and (min-resolution: 192dpi) and (min-width:768px),
+    screen and (min-resolution: 2dppx) and (min-width:768px) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/tablet-bg@2x.jpg);
+        }
+    }
 
+    .hero-header {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+    }
 
+    .order-service {
+        margin-top: 36px;
+    }
 }
 
 
@@ -1247,7 +1294,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 /* 💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻💻 */
 
 /* ✅✅✅ 🟩🟦🟦🟦🟦 DESCTOP 🟦🟦🟦🟦 */
-@media screen and (min-devise-pixel-ratio 2) and (min-width:1158px),
+@media screen and (min-devise-pixel-ratio:2) and (min-width:1158px),
 screen and (min-resolution: 192dpi) and (min-width:1158px),
 screen and (min-resolution: 2dppx) and (min-width:1158px) {
     .hero {
