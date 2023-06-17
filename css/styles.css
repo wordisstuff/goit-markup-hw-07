@@ -93,7 +93,8 @@ body {
 /* ✅✅✅ ⭕️⭕️⭕️⭕️ NAVIGATION ⭕️⭕️⭕️⭕️ */
 
 .header {
-    min-width: 428px;
+    width: 100%;
+    /* min-width: 428px; */
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid #E7E9FC;
@@ -940,6 +941,10 @@ screen and (max-width:767px) {
         width: 428px;
     }
 
+    .header>.container {
+        width: 100%;
+    }
+
     .hero {
         min-width: 428px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/m-bg.jpg);
@@ -1025,7 +1030,7 @@ screen and (max-width:767px) {
     }
 
     .burger-icon:is(:hover, :focus) {
-        stroke: var(--green);
+        /* stroke: var(--green); */
         transform: scale(1.2);
     }
 
