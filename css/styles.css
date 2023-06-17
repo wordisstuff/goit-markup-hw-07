@@ -943,6 +943,7 @@ screen and (max-width:767px) {
 
     .header>.container {
         width: 100%;
+        min-width: 428px;
     }
 
     .hero {
