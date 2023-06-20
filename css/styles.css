@@ -532,8 +532,9 @@ body {
 }
 
 .section-portfolio {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .filter {
@@ -541,21 +542,19 @@ body {
 }
 
 .filter-battons {
+    flex-wrap: wrap;
     flex-direction: row;
-    margin-bottom: 72px;
     border: none;
-    justify-content: center;
 }
 
 .filter-items {
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 24px;
     row-gap: 48px;
 }
 
 .filter-item {
-    width: 360;
+    width: 360px;
 }
 
 .filter-item-box {
@@ -1159,8 +1158,13 @@ screen and (max-width:767px) {
 
 }
 
-
-
+/* ✅✅✅ 🥩🥩🥩🥩🥩🥩PORTFOLIO MOBILE🥩🥩🥩🥩🥩🥩 */
+.filter-battons {
+    max-width: 360px;
+    margin-bottom: 48px;
+    justify-content: start;
+    row-gap: 16px;
+}
 
 /* ❌❌❌ 🟥🟦🟦 MOBILE 🟦🟦 */
 
@@ -1406,6 +1410,36 @@ screen and (max-width:767px) {
     .footer-btn-sub {
         margin: 0 0 0 24px;
     }
+
+    /* ✅✅✅ 🥩🥩🥩🥩🥩🥩PORTFOLIO TABLET 🥩🥩🥩🥩🥩🥩 */
+    .section-portfolio {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .filter-battons {
+        max-width: 1158px;
+        margin-bottom: 64px;
+        /* justify-content: center; */
+    }
+
+    .filter-items {
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
+    .filter-item {
+        width: 356px;
+    }
+
+
+    /* ❌❌❌ 🥩🥩🥩 PORTFOLIO 🥩🥩🥩 */
+
+
+
+
 }
 
 
@@ -1764,6 +1798,7 @@ screen and (max-width:767px) {
     }
 
     .section-portfolio {
+        width: 1440px;
         padding-top: 96px;
         padding-bottom: 120px;
     }
