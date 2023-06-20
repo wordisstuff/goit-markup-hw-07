@@ -561,7 +561,6 @@ body {
 }
 
 .filter-item-box {
-
     padding: 32px 16px;
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
@@ -569,11 +568,11 @@ body {
     transition: border-left 250ms cubic-bezier(0.4, 0, 0.2, 1), border-right 250ms cubic-bezier(0.4, 0, 0.2, 1), border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-item-box:hover,
-.filter-item-box:focus {
-    border-left: 1px solid var(--background-primary);
-    border-right: 1px solid var(--background-primary);
-    border-bottom: 1px solid var(--background-primary);
+.filter-link:hover .filter-item-box,
+.filter-link:focus .filter-item-box {
+    border-left: 1px solid var(--background-white);
+    border-right: 1px solid var(--background-white);
+    border-bottom: 1px solid var(--background-white);
 }
 
 .filter-link {
@@ -682,7 +681,7 @@ body {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal-window {
@@ -696,7 +695,7 @@ body {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 72px 24px 24px;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 
 }
 
