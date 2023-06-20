@@ -1437,6 +1437,10 @@ screen and (max-width:767px) {
         max-width: 1158px;
     }
 
+    .container {
+        width: 1158px;
+    }
+
     /* ✅✅✅ ⭕️⭕️⭕️⭕️ NAVIGATION DESCTOP⭕️⭕️⭕️⭕️ */
 
 
@@ -1486,6 +1490,10 @@ screen and (max-width:767px) {
     /* ❌❌❌ 🦸‍♂️🦸‍♂️🦸‍♂️ HERO DESCTOP🦸‍♂️🦸‍♂️🦸‍♂️ */
 
     /* ✅✅✅ 🪢🪢🪢🪢🪢🪢 FEATURE DESCTOP🪢🪢🪢🪢🪢🪢 */
+    .feature {
+        flex-wrap: nowrap;
+    }
+
     .fearure-icon-box {
         display: flex;
     }
